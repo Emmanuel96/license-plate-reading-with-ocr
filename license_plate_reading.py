@@ -8,12 +8,6 @@ import numpy as np
 import wget, zipfile, os
 filename = 'license-plates'
 
-# if not os.path.isfile(filename): 
-#     filename = wget.download('https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/CV0101/Dataset/license-plates.zip')
-#     with zipfile.ZipFile("license-plates.zip", "r") as zip_ref: 
-#         zip_ref.extractall()
-# pytesseract.pytesseract.tesseract_cmd = r'<full_path_to_your_tesseract_executable>'
-
 path_for_license_plates = os.getcwd() + "/license-plates/**/*.jpg"
 list_license_plates = []
 predicted_license_plates = []
